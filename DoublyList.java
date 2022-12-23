@@ -72,9 +72,8 @@ public class DoublyList {
             Node current = head;
             while (current.next != null)
             {
-                if(index == 1)
+                if(index == 0)
                 {
-                    current = current.next;
                     current.next = current.next.next;
                     break;
                 }

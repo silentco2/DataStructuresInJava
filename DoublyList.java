@@ -75,6 +75,7 @@ public class DoublyList {
                 if(index == 0)
                 {
                     current.next = current.next.next;
+                    current.next.prev = current;
                     break;
                 }
                 current = current.next;

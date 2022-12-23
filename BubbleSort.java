@@ -1,8 +1,6 @@
 public class BubbleSort {
     int[] arr;
-    Sort(int[] a){
-        arr = a;
-    }
+    Sort(int[] a){arr = a;}
     public void Bubble(){
         for (int i=0;i<arr.length-1;i++)
             for(int j=0;j<arr.length-i-1;j++)

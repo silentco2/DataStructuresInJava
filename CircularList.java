@@ -27,7 +27,7 @@ public class CircularList {
         else
         {
             tail.next = newNode;
-            tail=newNode;
+            tail=tail.next;
         }
         tail.next=head;
         size++;

@@ -15,8 +15,8 @@ public class HeapSort {
     private void heapify(int root,int size){
         int left = root*2+1,right = left+1;
         int max = root;
-        if (left<size && arr[left]>arr[root]) max = left;
-        if (right<size && arr[right]>arr[root]) max = right;
+        if (left<size && arr[left]>arr[max]) max = left;
+        if (right<size && arr[right]>arr[max]) max = right;
         if (max != root){
             swap(root,max);
             heapify(max,size);
